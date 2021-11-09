@@ -113,7 +113,7 @@ margin-top: -7px;
 color: rgb(255, 255, 255);
 }
 .hipervinculo{
-  color: white;
+  color: rgb(255, 255, 255);
   font-family:'Lora', serif;
 }
 .columnaDos{
@@ -154,4 +154,11 @@ background-color:  rgba(71, 100, 146);
 }
 a{
   border-radius: 40px;
+}
+.subtitulo{
+text-align: center;    
+font-size: 45px;
+font-family:'Lora', serif;
+color: rgb(72, 93, 187);
+margin-top: 65px;
 }
