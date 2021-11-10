@@ -10,6 +10,26 @@ body{
     background-attachment: fixed;
     background-size: cover;
     }
+
+.TituloUno{
+    text-align: center;    
+    font-size: 50px;
+    font-family:'Lora', serif;
+    color: white;
+    margin-top: 65px;
+    }
+
+    #letra_registro{
+        color: white;
+        margin-right: 630px;
+        font-family: 'lobster', cursive;
+        }
+        #boton_ini{
+          font-family: 'lobster', cursive;
+          font-size: 20px;
+          color: white;
+          } 
+
 .TitulosDos{
     text-align: center;
     margin: 0.5px;
