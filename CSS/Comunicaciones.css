@@ -4,7 +4,12 @@ background-color: #509ff8
 .botoncualquiera{
     margin-bottom: 100px;
 }
-
+body{
+    background-color: rgb(87, 250, 196);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
 .TitulosDos{
     text-align: center;
     margin: 0.5px;
