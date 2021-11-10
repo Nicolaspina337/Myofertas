@@ -5,3 +5,106 @@ background-color: #509ff8
     margin-bottom: 100px;
 }
 
+.TitulosDos{
+    text-align: center;
+    margin: 0.5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    margin-top: 15px;
+    background-color:  rgba(71, 100, 146);
+    }
+    .card-text{
+    font-size: 20px;
+    font-family:'Lora', serif;
+    }
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 35px;
+    margin-left: 0.1em;
+    padding: 1%;
+    
+    }
+    .grid-item {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    padding: 10px;
+    }
+    
+    img{
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    
+    .parallaxUno {
+    background-color: rgba(17,24,39);
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    
+    .ListaGeneral{
+    margin: 10px;
+    font-size: 20px;
+    margin-bottom: -3px;
+    padding: 5px;
+    font-weight: 100;
+    font-family: 'Lora', serif;
+    margin-top: -7px;
+    color: rgb(255, 255, 255);
+    }
+    .hipervinculo{
+      color: rgb(255, 255, 255);
+      font-family:'Lora', serif;
+    }
+    .columnaDos{
+      background-color: white
+    }
+    .columna{
+      background-color: gray;
+    }
+    #navegador{
+    background-color:  rgba(71, 100, 146);
+    }
+    #card_torta{
+      max-width: 1750px; 
+      margin-top: -6px; 
+      margin-left: 20px;
+    }
+    #imagenInicial{
+      width: 800px; 
+      height: 450px; 
+      padding: 20px;
+    }
+    .linea_separacion{
+      margin-top: 7em;
+    }
+    .creadores_web{
+      height: 42px; 
+      width: 1902px; 
+      margin-top: -0.9em; 
+      background-color:  rgba(71, 100, 146, 0.5);
+      max-width: 100%;
+    }
+    .texto_creadores{
+      margin-top: 2em; 
+      color: rgb(255, 255, 255);
+    }
+    .Cantidad_persona{
+      font-family:'Lora', serif;
+    }
+    a{
+      border-radius: 40px;
+    }
+    .subtitulo{
+    text-align: center;    
+    font-size: 45px;
+    font-family:'Lora', serif;
+    color: rgb(72, 93, 187);
+    margin-top: 65px;
+    }
