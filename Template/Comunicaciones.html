@@ -47,16 +47,24 @@
           Comuniquese con nosotros
         </h1>
 
-      <section class="form-formulario">
-        <h4>Formulario de comunicacion</h4>
+      <section class="form-register" style="margin-bottom: 50px;">
+        <h4>Formulario Registro</h4>
           <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
           <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-          <input class="controls" type="text" name="numero" id="numero" placeholder="Ingrese su Numero">
-          <input class="controls" type= "text" name="motivosolicitud" id="motivosolicitud" placeholder="Seleccione el motivo">
-          <input class="texto" type= "text" name="texto" id="texto" placeholder="Escriba aqui">
+          <input class="controls" type="number" name="numero" id="numero" placeholder="Ingrese su Numero">
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1" style="font-family:'calibri'; font-size: 18px; border: 1px solid #1f53c5;">
+              <option selected>Seleccione..</option>
+              <option>Reclamos</option>
+              <option>Consultas</option>
+              <option>Problemas con la sitio</option>
+              <option>Otros..</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Motivo de Solicitud" style="font-family:'calibri'; font-size: 18px;  border: 1px solid #1f53c5;"></textarea>
+          </div>
           <input class="botons" type="submit" value="Enviar">
-          
-
       </section>
 
       </div>
