@@ -1,13 +1,29 @@
-#navegador{
-background-color: #509ff8
-}
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;1,700&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body{
     background-color: rgb(87, 250, 196);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     }
-
+#boton_ini{
+font-family: 'lobster', cursive;
+font-size: 20px;
+color: white;
+} 
+#productos{
+font-family: 'lobster', cursive;
+font-size: 20px;
+color: white;
+}
+#contactos{
+font-family: 'lobster', cursive;
+font-size: 20px;
+color: white;
+}
 .ListaGeneral{
 margin: 10px;
 font-size: 20px;
@@ -18,7 +34,11 @@ font-family: 'Lora', serif;
 margin-top: -7px;
 color: rgb(255, 255, 255);
 }
-
+#TITULO{
+font-family: 'Lobster', cursive;
+font-size: 29px;
+color: rgb(43, 49, 48);
+}  
 .parallaxUno {
 background-color: rgba(17,24,39);
 min-height: 500px; 
