@@ -131,7 +131,7 @@ body{
     font-size: 45px;
     font-family:'Lora', serif;
     color: rgb(72, 93, 187);
-    margin-top: 65px;
+    margin-top: 25px;
     }
 
       
@@ -158,7 +158,6 @@ body{
       
       .controls {
         width: 100%;
-        background: #24303c;
         padding: 10px;
         border-radius: 4px;
         margin-bottom: 16px;
