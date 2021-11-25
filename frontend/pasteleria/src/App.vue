@@ -1,14 +1,18 @@
 <template>
   <div id="app">
     <MyHeader />
+    <MyFooter />
     <router-view/>
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader'
+import MyFooter from './components/MyFooter'
+
 export default {
   components: {MyHeader},
+  components2: {MyFooter},
   name: 'App'
 }
 </script>

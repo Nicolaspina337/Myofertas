@@ -30,6 +30,7 @@
       </section>
 
 
+ <footer>
  <div class="TitulosDos">
         <h1>
          Contactanos
@@ -71,6 +72,8 @@
       <h6 class="texto_creadores">Desarrollo de paginas web (grupo 7) Duoc uc 2021 </h6>
   </div>
     </div>
+</footer>
+
 
 </div>
 

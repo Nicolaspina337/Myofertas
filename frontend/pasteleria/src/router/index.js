@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Menu from '@/components/Menu'
-import Valoralizaciones from '@/components/Valoralizaciones'
-import Escritorio from '@/components/Escritorio'
-import Comunicaciones from '@/components/Comunicaciones'
-import Estante from '@/components/Estante'
-import Notificaciones from '@/components/Notificaciones'
-import Administrador from '@/components/Administrador'
-import Gestnotifi from '@/components/Gestnotifi'
-import Gestcorreo from '@/components/Gestcorreo'
+import Menu from '@/views/Menu'
+import Valoralizaciones from '@/views/Valoralizaciones'
+import Escritorio from '@/views/Escritorio'
+import Comunicaciones from '@/views/Comunicaciones'
+import Estante from '@/views/Estante'
+import Notificaciones from '@/views/Notificaciones'
+import Administrador from '@/views/Administrador'
+import Gestnotifi from '@/views/Gestnotifi'
+import Gestcorreo from '@/views/Gestcorreo'
 
 Vue.use(Router)
 
@@ -26,7 +26,7 @@ export default new Router({
     {
       path: '/valoralizaciones',
       name: 'valoralizaciones',
-      component: Valoralizaciones
+      component: Valoralizaciones, 
     },
     {
       path: '/escritorio',

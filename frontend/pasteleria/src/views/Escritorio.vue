@@ -1,25 +1,27 @@
 <template>
 <div class="Cuerpo">
 
- <h1 class="TituloUno">Estante organizador de baño</h1>
-
-<div class="card mb-3" id="card_torta">
+<h1 class="TituloUno">Escritorio oficina de madera</h1>
+  <div class="card mb-3" id="card_torta">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_986521-MLC44476528289_012021-O.webp"
+        <img src="https://http2.mlstatic.com/D_NQ_NP_770113-MLC46032688533_052021-O.webp"
           alt="Escritorio Oficina de Madera" id="imagenInicial">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">$14.500</h5>
-          <p class="card-text"><br> Estante organizador de baño
+          <h5 class="card-title">$59.000</h5>
+          <p class="card-text"><br> Escritorio Oficina Escolar
             <br>
-            -Muy practico y resistente Organizador
+            - Firme Escritorio para usar en Casa, Oficina.
             <br>
-            -Material: MDF
+            - Medidas : 120cm x 60cm, Espesor Cubierta 18mm
             <br>
-            -Medidas: Alto 80cm Ancho 22cm profundidad 20cm
+            - Material: cubierta de madera y patas de metal
             <br>
+            - Embalado en caja facil de armar.
+            <br>
+            - Tamaño caja : 63cm X 9cm X 133cm, 17 kilo
           </p>
           <br>
           <hr class="linea_separacion">
@@ -40,13 +42,18 @@
       <tr>
         <td class="columnaDos">
           <b>Marca:</b>Todacasa -
-          <b>Modelo</b>Organizador
+          <b>Modelo</b>Modelo Escritorio -
+          <b>Material del escritorio:</b>Madera y Metal -
+          <b>Largo:</b>120 cm -
+          <b>Altura x Ancho x Profundidad:</b>75 cm x 120 cm x 60 cm
         </td>
       </tr>
     </table>
   </div>
 
-  <div class="TitulosDos">
+
+<footer>
+ <div class="TitulosDos">
         <h1>
          Contactanos
         </h1>
@@ -87,8 +94,11 @@
       <h6 class="texto_creadores">Desarrollo de paginas web (grupo 7) Duoc uc 2021 </h6>
   </div>
     </div>
+</footer>
+
 
 </div>
+
 </template>
 
 <style scoped>
