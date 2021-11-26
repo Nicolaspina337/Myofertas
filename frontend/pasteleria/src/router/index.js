@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Menu from '@/views/Menu'
-import Valoralizaciones from '@/views/Valoralizaciones'
+import Valorizaciones from '@/views/Valorizaciones'
 import Escritorio from '@/views/Escritorio'
 import Comunicaciones from '@/views/Comunicaciones'
 import Estante from '@/views/Estante'
@@ -24,9 +24,9 @@ export default new Router({
       component: Menu
     },
     {
-      path: '/valoralizaciones',
-      name: 'valoralizaciones',
-      component: Valoralizaciones, 
+      path: '/valorizaciones',
+      name: 'valorizaciones',
+      component: Valorizaciones, 
     },
     {
       path: '/escritorio',

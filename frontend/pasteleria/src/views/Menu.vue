@@ -16,9 +16,9 @@
                 alt="Escritorio oficina de Madera"></div>
         <div class="grid-item"><img src="https://http2.mlstatic.com/D_NQ_NP_986521-MLC44476528289_012021-O.webp"
                 alt="Estante Organizador de baño"></div>
-        <div class="grid-item"><a class="hipervinculo" href="../Template/Escritorio.html">Escritorio Oficina Madera</a>
+        <div class="grid-item"><router-link to="/escritorio">Escritorio oficina</router-link>
         </div>
-        <div class="grid-item"><a class="hipervinculo" href="../Template/Estante.html">Estante Organizador De Bañoo</a>
+        <div class="grid-item"><router-link to="/estante">Estante de baño</router-link>
         </div>
   </div>
 
