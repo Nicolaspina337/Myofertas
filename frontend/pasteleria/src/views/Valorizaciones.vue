@@ -83,6 +83,7 @@
             type="file"
             class="form-control"
             id="inputGroupFile02"
+            accept="image/png,image/jpeg"
             @change="onFileChange"
           />
           <label class="input-group-text" for="inputGroupFile02">Subir </label>
@@ -173,7 +174,7 @@ export default {
             alert(error);
           });
       } else {
-        console.log("no enviado");
+        alert('debe revisar que haya ingresado todos los valores solicitados');
       }
     },
     esValido() {
