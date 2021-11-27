@@ -4,59 +4,94 @@
         <h4>Crear notificacion</h4>
           <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Titulo notificacion</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" v-model="titulo">
               </div>
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion" style="font-family:'calibri'; font-size: 18px;"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion" style="font-family:'calibri'; font-size: 18px;" v-model="descripcion"></textarea>
           </div>
-          <input class="botons" type="submit" value="Enviar">
+          <div class="input-group mb-3">
+          <input
+            type="file"
+            class="form-control"
+            id="inputGroupFile02"
+            @change="onFileChange"
+          />
+
+        </div>
+
+          <input class="botons" type="submit" value="Enviar" @click="publicar()"> 
     </section>
-        
-    <footer>
-      <div class="TitulosDos">
-            <h1>
-            Contactanos
-            </h1>
-        </div>
-        
-        <div class="parallaxUno"> 
-        <div class="ListaGeneral">
-        <p><br>Ubicacion:</p>
-        <ul>
-        <li>
-        Avenida Grecia #459
-        </li>
-        <li>
-        Ñuñoa, Region Metropolitana
-        </li>
-        <li>
-        Chile
-        </li>
-        </ul>
-        </div>
-        <div class="ListaGeneral">
-        <p><br>Telefono:</p>
-        <ul>
-        <li>
-        +56287956234
-        </li>
-        </ul>
-        </div>
-        <div class="ListaGeneral">
-        <p><br>Envienos un correo electronico:</p>
-        <ul>
-        <li>
-        MisOfertas@RetailOfertas.cl
-        </li>
-        </ul>
-        </div>  
-          <div class="creadores_web">
-          <h6 class="texto_creadores">Desarrollo de paginas web (grupo 7) Duoc uc 2021 </h6>
-        </div>
-        </div>
-    </footer>
+
 </div>
 </template>
+
+<script>
+import axios from "axios";
+export default {
+  data() {
+    return {
+      titulo: "",
+      descripcion: "",
+      archivo: "",
+    };
+  },
+  mounted() {
+    console.log("montado");
+  },
+  computed: {
+
+  },
+  methods: {
+    onFileChange(event) {
+      let files = event.target.files || event.dataTransfer.files;
+      if (!files.length) return;
+      this.createImage(files[0]);
+    },
+    createImage(file) {
+      let image = new Image();
+      let reader = new FileReader();
+      let vm = this;
+
+      reader.onload = (e) => {
+        vm.archivo = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    },
+    publicar() {
+      if (this.esValido()) {
+        axios
+          .post("/api/gestnotifi/add", {
+            titulo: this.titulo,
+            descripcion: this.descripcion,
+            foto: this.archivo,
+          })
+          .then(respuesta => {
+            alert("notificacion agregada correctamente");
+          })
+          .catch((error) => {
+            alert(error);
+          });
+      } else {
+        console.log("no se pudo agregar la notificacion");
+      }
+    },
+    esValido() {
+      if (this.titulo.trim().length <= 0) {
+        alert("Debe ingresar un titulo");
+        return false;
+      }
+      return true;
+    },
+    esValido() {
+      if (this.descripcion.trim().length <= 0) {
+        alert("Debe ingresar una descripcion");
+        return false;
+      }
+      return true;
+    },
+  },
+};
+</script>
 
 <style scoped>
 

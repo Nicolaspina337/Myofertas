@@ -3,6 +3,8 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const express = require('express');
 const valorizacionesApi = require('./api/valorizacionesApi');
+const gestnotifiApi = require('./api/gestnotifiApi');
+const comunicacionesApi = require('./api/comunicacionesApi');
 const DBHelper = require('./utils/DBHelper');
 
 let conn = new DBHelper().getConn();
@@ -16,6 +18,8 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 // enrutamiento api back-end
 app.use('/api/valorizaciones', valorizacionesApi);
+app.use('/api/gestnotifi', gestnotifiApi);
+app.use('/api/comunicaciones', comunicacionesApi);
 
 
 // empieza a escuchar

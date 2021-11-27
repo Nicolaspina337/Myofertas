@@ -99,39 +99,6 @@
       </div>
     </div>
 
-    <footer>
-      <div class="TitulosDos">
-        <h1>Contactanos</h1>
-      </div>
-
-      <div class="parallaxUno">
-        <div class="ListaGeneral">
-          <p><br />Ubicacion:</p>
-          <ul>
-            <li>Avenida Grecia #459</li>
-            <li>Ñuñoa, Region Metropolitana</li>
-            <li>Chile</li>
-          </ul>
-        </div>
-        <div class="ListaGeneral">
-          <p><br />Telefono:</p>
-          <ul>
-            <li>+56287956234</li>
-          </ul>
-        </div>
-        <div class="ListaGeneral">
-          <p><br />Envienos un correo electronico:</p>
-          <ul>
-            <li>MisOfertas@RetailOfertas.cl</li>
-          </ul>
-        </div>
-        <div class="creadores_web">
-          <h6 class="texto_creadores">
-            Desarrollo de paginas web (grupo 7) Duoc uc 2021
-          </h6>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 <script>
