@@ -9,8 +9,8 @@ class DBHelper{
             host:'127.0.0.1',
             port:'3306',
             user:'root',				// Nombre de usuario del administrador de Mysql
-            password:'nico123',			// Contraseña de administrador de Mysql
-            database:'myofertas'  			// Nombre de la base de datos
+            password:'password',			// Contraseña de administrador de Mysql
+            database:'pasteleria'  			// Nombre de la base de datos
         });
         conn.connect();
         return conn;

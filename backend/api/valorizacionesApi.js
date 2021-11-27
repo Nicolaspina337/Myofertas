@@ -5,8 +5,8 @@ const DBHelper = require('../utils/DBHelper');
 const sql = require('../sqlMap');
 
 // aumentar usuario
-router.post('/valorizaciones', (req, res) => {
-    let sqlStr = sql.user.add;
+router.post('/add', (req, res) => {
+    let sqlStr = sql.valoralizaciones.add;
     let params = req.body;
     let conn = new DBHelper().getConn();
     conn.query(sqlStr, [params.titulo, params.estrellas, params.comentario, params.foto], (err, result) => {
