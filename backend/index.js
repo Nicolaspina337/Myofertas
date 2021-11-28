@@ -5,6 +5,7 @@ const express = require('express');
 const valorizacionesApi = require('./api/valorizacionesApi');
 const gestnotifiApi = require('./api/gestnotifiApi');
 const comunicacionesApi = require('./api/comunicacionesApi');
+const contactoApi = require('./api/contactoApi');
 const DBHelper = require('./utils/DBHelper');
 
 let conn = new DBHelper().getConn();
@@ -20,6 +21,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.use('/api/valorizaciones', valorizacionesApi);
 app.use('/api/gestnotifi', gestnotifiApi);
 app.use('/api/comunicaciones', comunicacionesApi);
+app.use('/api/contacto', contactoApi);
 
 
 // empieza a escuchar
